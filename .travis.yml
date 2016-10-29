@@ -14,4 +14,4 @@ deploy:
   provider: heroku
   api_key:
     secure: "cb082f02-8ef4-4084-9378-c640912aa19e"
-  app: gens-tictactoe
+  app: gens-testing

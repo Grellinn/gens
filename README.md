@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/HUGB2016/gens.svg?branch=master)](https://travis-ci.org/HUGB2016/gens)
+[![Build Status](https://travis-ci.org/Grellinn/gens.svg?branch=master)](https://travis-ci.org/Grellinn/gens)
 # gens
 Late term group assignment in HUGB 2016 at Reykjavík University.
 
