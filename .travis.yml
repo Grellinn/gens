@@ -1,7 +1,10 @@
 language: java
 
 script:
-    - ./gradlew check
+    - ./gradlew clean
+    - ./gradlew installDist
+    - ./gradlew build
+    - ./gradlew run
     
 before_install:
  - chmod +x gradlew
