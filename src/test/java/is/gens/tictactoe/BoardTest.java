@@ -1,8 +1,8 @@
 package is.gens.tictactoe;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class BoardTest {
 
@@ -11,6 +11,6 @@ public class BoardTest {
 		char[][] table = new char[3][3];
         Board board = new Board();
 		
-        assertEquals(table, board.displayBoard(table)); 
+        assertEquals("Everything is gonna be okay!", board.displayBoard(table)); 
 	}
 }
