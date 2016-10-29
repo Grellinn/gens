@@ -1,8 +1,5 @@
 language: java
 
-script:
-    - ./gradlew stage
-    - ./gradlew run
     
 before_install:
  - chmod +x gradlew
