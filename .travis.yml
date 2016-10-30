@@ -13,7 +13,7 @@ deploy:
     secure: "cb082f02-8ef4-4084-9378-c640912aa19e"
   app: gens-testing
   
-script: ./gradlew Javadoc --info --stacktrace
+script: ./gradlew Javadoc
 
 after_success:
-- .utility/push-javadoc-to-gh-pages.sh
+- sudo .utility/push-javadoc-to-gh-pages.sh
