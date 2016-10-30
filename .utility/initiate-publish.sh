@@ -4,7 +4,7 @@ if [ "$TRAVIS_REPO_SLUG" == "Grellinn/gens" ] && [ "$TRAVIS_JDK_VERSION" == "ora
 
   echo -e "Publishing javadoc...\n"
 
-  sudo cp -R build/docs/javadoc $HOME/javadoc-latest
+  cp -R build/docs/javadoc $HOME/javadoc-latest
 
   cd $HOME
   git config --global user.email "travis@travis-ci.org"
@@ -13,7 +13,7 @@ if [ "$TRAVIS_REPO_SLUG" == "Grellinn/gens" ] && [ "$TRAVIS_JDK_VERSION" == "ora
 
   cd gh-pages
   git rm -rf ./javadoc
-  sudo cp -Rf $HOME/javadoc-latest ./javadoc
+  cp -Rf $HOME/javadoc-latest ./javadoc
   git add -f .
   git commit -m "Latest javadoc on successful travis build $TRAVIS_BUILD_NUMBER auto-pushed to gh-pages"
   git push -fq origin gh-pages > /dev/null
