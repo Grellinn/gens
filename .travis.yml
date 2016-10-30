@@ -1,5 +1,7 @@
 language: java
 
+scripts:
+    - ./gradlew javadoc
     
 before_install:
  - chmod +x gradlew
