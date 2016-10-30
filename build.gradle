@@ -16,7 +16,6 @@ dependencies {
     testCompile "junit:junit:4.+"
 }
 
-task stage(dependsOn: ['clean', 'build', 'installDist', 'javadoc'])
+task stage(dependsOn: ['clean', 'build', 'installDist'])
 build.mustRunAfter clean
 installDist.mustRunAfter build
-javadoc.mustRunAfter installDist
