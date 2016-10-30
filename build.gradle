@@ -19,3 +19,9 @@ dependencies {
 task stage(dependsOn: ['clean', 'build', 'installDist'])
 build.mustRunAfter clean
 installDist.mustRunAfter build
+
+task exportjavadoc(type: Exec) {
+	executable "sh"
+	args "bin/exportdoc"
+}
+build.finalizedBy(exportjavadoc)
